@@ -1,5 +1,6 @@
 import express from 'express';
-import {loginhand,registerhand} from '../controller/auth.controller'
+import {loginhand} from '../controller/login.controller'
+import {registerhand} from '../controller/register.controller'
 import validate from '../middlewares/validate';
 import {addloginSchema,addregisterSchema} from'../schema/authschema'
 

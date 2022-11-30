@@ -1,15 +1,13 @@
 import express from 'express';
 import {
-    getstu,
-    getstuid,
-    addstu,
     getteacher,
     getteacherid,
     addteacher,
-    getclass,
+} from '../controller/teacher.cotroller';
+import { getclass,
     getclassid,
-    addclass
-} from '../controller/school.cotroller';
+    addclass} from '../controller/class.controller'
+import { getstu,getstuid,  addstu} from '../controller/student.controller';
 import validate from '../middlewares/validate';
 import {
     getstuSchema,

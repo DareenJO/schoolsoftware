@@ -15,17 +15,22 @@ model Student{
   name String
   age String
   major String
+   classroom Classroom @relation(fields: [id], references: [id])
 
 }
 
 model Classroom{
   id String @id 
   name String
+  teacher Teacher[]
+  student Student[]
 }
 
 model Teacher{
   id String @id 
   name String
+  classroom Classroom @relation(fields: [id], references: [id])
+  
 }
 
 model User{
